@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IAppStoredProgram | Zach_BOOSEapp </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IAppStoredProgram | Zach_BOOSEapp ">
+      
+      <meta name="description" content="Interface defining the core behaviour of the AppStoredProgram. Manages commands, variables, execution flow, and expression evaluation.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/new/main/apiSpec/new?filename=BOOSEapp_IAppStoredProgram.md&amp;value=---%0Auid%3A%20BOOSEapp.IAppStoredProgram%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Zach_BOOSEapp">
+            Zach_BOOSEapp
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BOOSEapp.IAppStoredProgram">
+
+
+
+  <h1 id="BOOSEapp_IAppStoredProgram" data-uid="BOOSEapp.IAppStoredProgram" class="text-break">
+Interface IAppStoredProgram  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BOOSEapp.html">BOOSEapp</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BOOSEapp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Interface defining the core behaviour of the AppStoredProgram.
+Manages commands, variables, execution flow, and expression evaluation.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAppStoredProgram</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="BOOSEapp_IAppStoredProgram_PC_" data-uid="BOOSEapp.IAppStoredProgram.PC*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_PC" data-uid="BOOSEapp.IAppStoredProgram.PC">
+  PC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the current program counter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int PC { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BOOSEapp_IAppStoredProgram_AddCommand_" data-uid="BOOSEapp.IAppStoredProgram.AddCommand*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_AddCommand_BOOSE_ICommand_" data-uid="BOOSEapp.IAppStoredProgram.AddCommand(BOOSE.ICommand)">
+  AddCommand(ICommand)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a command to the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int AddCommand(ICommand command)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>command</code> <span class="xref">ICommand</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_AddVariable_" data-uid="BOOSEapp.IAppStoredProgram.AddVariable*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_AddVariable_BOOSEapp_AppEvaluation_" data-uid="BOOSEapp.IAppStoredProgram.AddVariable(BOOSEapp.AppEvaluation)">
+  AddVariable(AppEvaluation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a variable to the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddVariable(AppEvaluation variable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variable</code> <a class="xref" href="BOOSEapp.AppEvaluation.html">AppEvaluation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_Commandsleft_" data-uid="BOOSEapp.IAppStoredProgram.Commandsleft*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_Commandsleft" data-uid="BOOSEapp.IAppStoredProgram.Commandsleft">
+  Commandsleft()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if commands remain to be executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Commandsleft()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_EvaluateExpression_" data-uid="BOOSEapp.IAppStoredProgram.EvaluateExpression*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_EvaluateExpression_System_String_" data-uid="BOOSEapp.IAppStoredProgram.EvaluateExpression(System.String)">
+  EvaluateExpression(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Evaluates an expression and returns the result as string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EvaluateExpression(string expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_GetVarValue_" data-uid="BOOSEapp.IAppStoredProgram.GetVarValue*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_GetVarValue_System_String_" data-uid="BOOSEapp.IAppStoredProgram.GetVarValue(System.String)">
+  GetVarValue(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets variable value as string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetVarValue(string varName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_GetVariable_" data-uid="BOOSEapp.IAppStoredProgram.GetVariable*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_GetVariable_System_String_" data-uid="BOOSEapp.IAppStoredProgram.GetVariable(System.String)">
+  GetVariable(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a variable object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AppEvaluation GetVariable(string varName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BOOSEapp.AppEvaluation.html">AppEvaluation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_IsExpression_" data-uid="BOOSEapp.IAppStoredProgram.IsExpression*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_IsExpression_System_String_" data-uid="BOOSEapp.IAppStoredProgram.IsExpression(System.String)">
+  IsExpression(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks whether a string represents an expression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsExpression(string expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_PopCompound_" data-uid="BOOSEapp.IAppStoredProgram.PopCompound*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_PopCompound" data-uid="BOOSEapp.IAppStoredProgram.PopCompound">
+  PopCompound()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pops a compound command from the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CompoundCommand PopCompound()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CompoundCommand</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_PushCompound_" data-uid="BOOSEapp.IAppStoredProgram.PushCompound*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_PushCompound_BOOSE_CompoundCommand_" data-uid="BOOSEapp.IAppStoredProgram.PushCompound(BOOSE.CompoundCommand)">
+  PushCompound(CompoundCommand)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pushes a compound command onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PushCompound(CompoundCommand command)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>command</code> <span class="xref">CompoundCommand</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_ResetProgram_" data-uid="BOOSEapp.IAppStoredProgram.ResetProgram*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_ResetProgram" data-uid="BOOSEapp.IAppStoredProgram.ResetProgram">
+  ResetProgram()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets program state, clearing commands and variables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ResetProgram()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_ResolveDouble_" data-uid="BOOSEapp.IAppStoredProgram.ResolveDouble*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_ResolveDouble_System_String_" data-uid="BOOSEapp.IAppStoredProgram.ResolveDouble(System.String)">
+  ResolveDouble(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resolves a token to a double.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double ResolveDouble(string token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_ResolveInt_" data-uid="BOOSEapp.IAppStoredProgram.ResolveInt*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_ResolveInt_System_String_" data-uid="BOOSEapp.IAppStoredProgram.ResolveInt(System.String)">
+  ResolveInt(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resolves a token to an integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ResolveInt(string token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_Run_" data-uid="BOOSEapp.IAppStoredProgram.Run*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_Run" data-uid="BOOSEapp.IAppStoredProgram.Run">
+  Run()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Runs the program until no commands remain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Run()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_SetProgramCounter_" data-uid="BOOSEapp.IAppStoredProgram.SetProgramCounter*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_SetProgramCounter_System_Int32_" data-uid="BOOSEapp.IAppStoredProgram.SetProgramCounter(System.Int32)">
+  SetProgramCounter(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the program counter to a specific line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetProgramCounter(int line)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>line</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_UpdateVariable_" data-uid="BOOSEapp.IAppStoredProgram.UpdateVariable*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_UpdateVariable_System_String_System_Boolean_" data-uid="BOOSEapp.IAppStoredProgram.UpdateVariable(System.String,System.Boolean)">
+  UpdateVariable(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates a boolean variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateVariable(string varName, bool newValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>newValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_UpdateVariable_" data-uid="BOOSEapp.IAppStoredProgram.UpdateVariable*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_UpdateVariable_System_String_System_Double_" data-uid="BOOSEapp.IAppStoredProgram.UpdateVariable(System.String,System.Double)">
+  UpdateVariable(string, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates a double variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateVariable(string varName, double newValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>newValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_UpdateVariable_" data-uid="BOOSEapp.IAppStoredProgram.UpdateVariable*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_UpdateVariable_System_String_System_Int32_" data-uid="BOOSEapp.IAppStoredProgram.UpdateVariable(System.String,System.Int32)">
+  UpdateVariable(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates an integer variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateVariable(string varName, int newValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>newValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEapp_IAppStoredProgram_VariableExists_" data-uid="BOOSEapp.IAppStoredProgram.VariableExists*"></a>
+
+  <h3 id="BOOSEapp_IAppStoredProgram_VariableExists_System_String_" data-uid="BOOSEapp.IAppStoredProgram.VariableExists(System.String)">
+  VariableExists(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks whether a variable exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool VariableExists(string varName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ZachFJMS/blob/main/BOOSEapp/BOOSEapp/IAppStoredProgram.cs/#L14" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
